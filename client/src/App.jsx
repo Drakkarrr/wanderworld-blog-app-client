@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Login from './Login'
-import Register from './Register'
 import Layout from './Layout'
-import Post from './Post'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
 
@@ -11,12 +11,10 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Post />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
+          <Route index element={<HomePage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
         </Route>
-
-
       </Routes>
     </>
   )

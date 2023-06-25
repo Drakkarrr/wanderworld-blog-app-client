@@ -94,3 +94,36 @@ nav a {
   margin: 0 3px;
   font-weight: normal;
 }
+
+form.login, form.register {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+button.form {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.form:hover {
+  background-color: #ddd;
+  color: black;
+}
